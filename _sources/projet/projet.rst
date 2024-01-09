@@ -149,12 +149,10 @@ Le programme principal se décompose en trois parties:
 
 .. rubric:: Initialiser les variables
 
-Il faut considérer au moins quatres variables : ``mot_a_deviner``, ``mot_cache``, ``n`` et ``r``.
+Il faut considérer au moins quatre variables : ``mot_a_deviner``, ``mot_cache``, ``n`` et ``r``.
 
-- La variable ``mot_a_deviner`` contient le mot à deviner que le joueur doit ignorer. Pour les test on saisira un mot
-  choisi en exemple.
-- la variable ``mot_cache`` contient le mot à deviner en remplaçant les lettres par des soulignés. Il évolue au fil de
-  la partie en remplaçant les soulignés par les lettres trouvées.
+- La variable ``mot_a_deviner`` contient le mot à deviner que le joueur doit ignorer. Pour les test on saisira un mot choisi en exemple.
+- la variable ``mot_cache`` contient le mot à deviner en remplaçant les lettres par des soulignés. Il évolue au fil de la partie en remplaçant les soulignés par les lettres trouvées.
 - La variable ``n`` est le nombre entier qui contient le nombre d'erreurs commises par le joueur.
 - La variable ``r`` est le nombre entier qui contient le nombre de lettre qu'il faut encore découvrir.
 
@@ -169,8 +167,7 @@ A chaque itération, plusieurs instructions sont effectuées:
 - Le joueur voit le mot caché affiché avec des caractères soulignés.
 - Une proposition de saisie de lettre est affichée juste après.
 - Le joueur doit saisir une lettre qui est mémorisée dans une variable ``lettre``.
-- La lettre est vérifiée. Si elle est correcte, elle remplace le ou les caractères soulignés correspondant dans le mot
-  caché. Dans le cas contraire, on affiche la potence qui se complète.
+- La lettre est vérifiée. Si elle est correcte, elle remplace le ou les caractères soulignés correspondant dans le mot caché. Dans le cas contraire, on affiche la potence qui se complète.
 
 .. rubric:: Fin de la partie
 

@@ -516,12 +516,10 @@ trouvant le mot, soit il est pendu et perd.</p>
 <li><p>On conclut en affichant le gagnant ou le perdant.</p></li>
 </ol>
 <p class="rubric">Initialiser les variables</p>
-<p>Il faut considérer au moins quatres variables : <code class="docutils literal notranslate"><span class="pre">mot_a_deviner</span></code>, <code class="docutils literal notranslate"><span class="pre">mot_cache</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code> et <code class="docutils literal notranslate"><span class="pre">r</span></code>.</p>
+<p>Il faut considérer au moins quatre variables : <code class="docutils literal notranslate"><span class="pre">mot_a_deviner</span></code>, <code class="docutils literal notranslate"><span class="pre">mot_cache</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code> et <code class="docutils literal notranslate"><span class="pre">r</span></code>.</p>
 <ul class="simple">
-<li><p>La variable <code class="docutils literal notranslate"><span class="pre">mot_a_deviner</span></code> contient le mot à deviner que le joueur doit ignorer. Pour les test on saisira un mot
-choisi en exemple.</p></li>
-<li><p>la variable <code class="docutils literal notranslate"><span class="pre">mot_cache</span></code> contient le mot à deviner en remplaçant les lettres par des soulignés. Il évolue au fil de
-la partie en remplaçant les soulignés par les lettres trouvées.</p></li>
+<li><p>La variable <code class="docutils literal notranslate"><span class="pre">mot_a_deviner</span></code> contient le mot à deviner que le joueur doit ignorer. Pour les test on saisira un mot choisi en exemple.</p></li>
+<li><p>la variable <code class="docutils literal notranslate"><span class="pre">mot_cache</span></code> contient le mot à deviner en remplaçant les lettres par des soulignés. Il évolue au fil de la partie en remplaçant les soulignés par les lettres trouvées.</p></li>
 <li><p>La variable <code class="docutils literal notranslate"><span class="pre">n</span></code> est le nombre entier qui contient le nombre d’erreurs commises par le joueur.</p></li>
 <li><p>La variable <code class="docutils literal notranslate"><span class="pre">r</span></code> est le nombre entier qui contient le nombre de lettre qu’il faut encore découvrir.</p></li>
 </ul>
@@ -533,8 +531,7 @@ la partie en remplaçant les soulignés par les lettres trouvées.</p></li>
 <li><p>Le joueur voit le mot caché affiché avec des caractères soulignés.</p></li>
 <li><p>Une proposition de saisie de lettre est affichée juste après.</p></li>
 <li><p>Le joueur doit saisir une lettre qui est mémorisée dans une variable <code class="docutils literal notranslate"><span class="pre">lettre</span></code>.</p></li>
-<li><p>La lettre est vérifiée. Si elle est correcte, elle remplace le ou les caractères soulignés correspondant dans le mot
-caché. Dans le cas contraire, on affiche la potence qui se complète.</p></li>
+<li><p>La lettre est vérifiée. Si elle est correcte, elle remplace le ou les caractères soulignés correspondant dans le mot caché. Dans le cas contraire, on affiche la potence qui se complète.</p></li>
 </ul>
 <p class="rubric">Fin de la partie</p>
 <p>La boucle se termine lorsque le joueur a trouvé le mot ou lorsqu’il a perdu et se retrouve pendu.</p>
