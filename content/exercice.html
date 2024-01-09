@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercices &#8212; 1 NSI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a6621bbe" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/exercice';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Jeu du pendu" href="../projet/projet.html" />
+    <link rel="prev" title="Les chaines de caractères" href="cours.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Haut de page
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <header>
+  
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
+  
+  </header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">1 NSI</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="activite.html">Activité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cours.html">Les chaines de caractères</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Exercices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projet/projet.html">Jeu du pendu</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/exercice.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Exercices</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice-1">Exercice 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice-2">Exercice 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice-3">Exercice 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice-4">Exercice 4</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="toctree-wrapper compound">
+</div>
+<section id="exercices">
+<h1>Exercices<a class="headerlink" href="#exercices" title="Link to this heading">#</a></h1>
+<section id="exercice-1">
+<h2>Exercice 1<a class="headerlink" href="#exercice-1" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Créer 3 variables <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> et <code class="docutils literal notranslate"><span class="pre">c</span></code> de type <strong>str</strong>  ayant pour valeurs respectives « numérique », « science » et
+« informatique ».</p></li>
+<li><p>Soit <code class="docutils literal notranslate"><span class="pre">t</span></code> la variable de type <strong>str</strong>. Quelle opération sur les variables <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> et <code class="docutils literal notranslate"><span class="pre">c</span></code> permet d’affecter
+la valeur « numérique science informatique » à la variable <code class="docutils literal notranslate"><span class="pre">t</span></code> ?</p></li>
+<li><p>Ecrire une suite d’instructions en Python pour ajouter un « s » à la fin de chaque mot de la chaine de caractères
+contenue dans la variable <code class="docutils literal notranslate"><span class="pre">t</span></code>.</p></li>
+</ol>
+</section>
+<section id="exercice-2">
+<h2>Exercice 2<a class="headerlink" href="#exercice-2" title="Link to this heading">#</a></h2>
+<p>On donne le code de la fonction <code class="docutils literal notranslate"><span class="pre">occurence</span></code> ci-après.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">occurence</span><span class="p">(</span><span class="n">chaine</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">chaine</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">n</span>
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>Quelle est la valeur renvoyée par la fonction <code class="docutils literal notranslate"><span class="pre">occurence</span></code> suite à l’appel <code class="docutils literal notranslate"><span class="pre">occurence('abracadabra')</span></code> ?</p></li>
+<li><p>On veut connaître le nombre d’apparitions de la lettre “e” dans la chaine passée en argument lors de l’appel de la
+fonction. Quelle(s) modifications faut-il faire sur la fonction ?</p></li>
+<li><p>Proposer un code Python qui permet de compter le nombre d’apparitions d’une lettre passée en argument de la fonction
+<code class="docutils literal notranslate"><span class="pre">occurence</span></code>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On appelle <strong>occurence</strong> d’un caractère le nombre de fois que ce caractère est contenu dans une chaine de
+caractères.</p>
+</div>
+</section>
+<section id="exercice-3">
+<h2>Exercice 3<a class="headerlink" href="#exercice-3" title="Link to this heading">#</a></h2>
+<p>Toute variable de type <strong>str</strong> est ce qu’on appelle un <strong>objet</strong> en Python. Un <strong>objet</strong> est une structure de donnée
+qui permet d’appliquer des fonctions définies pour cet objet. Ces fonctions propres à l’objet sont appelées des
+<strong>méthodes</strong> et s’appliquent à l’objet selon la syntaxe <code class="docutils literal notranslate"><span class="pre">objet.méthode()</span></code>.</p>
+<p>Les méthodes disponibles pour les objets de type <strong>str</strong> sont nombreuses. En voici quelques unes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">count(caractere)</span></code> renvoie le nombre d’occurence du caractère passé en argument.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">upper()</span></code> renvoie la chaine de caractères en lettre majuscule.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lower()</span></code> renvoie la chaine de caractères en lettre minuscule.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">replace(caractère_1,</span> <span class="pre">caractere_2)</span></code> remplace dans la chaine de caractères chaque <code class="docutils literal notranslate"><span class="pre">caractere_1</span></code> par le
+<code class="docutils literal notranslate"><span class="pre">caractere_2</span></code>.</p></li>
+</ul>
+<p>Soit <code class="docutils literal notranslate"><span class="pre">ch</span></code> la variable de type <strong>str</strong> contenant la chaine “numérique science informatique”.</p>
+<ol class="arabic simple">
+<li><p>Soit <code class="docutils literal notranslate"><span class="pre">M</span></code> la variable de type <strong>str</strong>. Ecrire une instruction Python qui affecte la même chaine de caractères que la
+variable <code class="docutils literal notranslate"><span class="pre">ch</span></code> en majuscules.</p></li>
+<li><p>Ecrire une instruction qui renvoie le nombre d’occurence de la lettre “e” dans la chaine <code class="docutils literal notranslate"><span class="pre">ch</span></code>.</p></li>
+<li><p>Remplacer dans la chaine de caractère <code class="docutils literal notranslate"><span class="pre">ch</span></code> chaque lettre “i” par la lettre “o”.</p></li>
+<li><p>Ecrire une instruction Python qui supprime les espaces de la chaine de caractères <code class="docutils literal notranslate"><span class="pre">ch</span></code>.</p></li>
+</ol>
+</section>
+<section id="exercice-4">
+<h2>Exercice 4<a class="headerlink" href="#exercice-4" title="Link to this heading">#</a></h2>
+<p>On souhaite écrire la fonction <code class="docutils literal notranslate"><span class="pre">nombre_mots</span></code> en Python qui renvoie le nombre de mots contenus dans une chaine de
+caractères. On considère que les mots présents dans une chaine sont séparés par un espace.</p>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">nombre_mots</span></code> a pour paramètre <code class="docutils literal notranslate"><span class="pre">chaine</span></code> qui est de type <strong>str</strong>. Elle renvoie un nombre entier positif.</p>
+<ol class="arabic simple">
+<li><p>Ecrire le code de cette fonction et la tester avec la chaine “numérique science informatique”.</p></li>
+<li><p>On appelle la fonction avec la chaine “un tour de passe-passe” qui contient 5 mots. La valeur renvoyée par la
+fonction est-elle correcte ? Apporter une correction à votre fonction pour qu’elle renvoie la valeur attendue.</p></li>
+</ol>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="cours.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Les chaines de caractères</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../projet/projet.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Jeu du pendu</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice-1">Exercice 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice-2">Exercice 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice-3">Exercice 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercice-4">Exercice 4</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Yannick Chistel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022, Yannick Chistel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

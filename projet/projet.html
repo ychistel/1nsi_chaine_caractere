@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Jeu du pendu &#8212; 1 NSI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a6621bbe" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'projet/projet';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="prev" title="Exercices" href="../content/exercice.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Haut de page
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <header>
+  
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
+  
+  </header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">1 NSI</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../content/activite.html">Activité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../content/cours.html">Les chaines de caractères</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../content/exercice.html">Exercices</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Jeu du pendu</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/projet/projet.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Jeu du pendu</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation">Présentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctions-utiles">Fonctions utiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#programme-principal">Programme principal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amelioration-du-jeu">Amélioration du jeu</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="jeu-du-pendu">
+<h1>Jeu du pendu<a class="headerlink" href="#jeu-du-pendu" title="Link to this heading">#</a></h1>
+<section id="presentation">
+<h2>Présentation<a class="headerlink" href="#presentation" title="Link to this heading">#</a></h2>
+<p>Bien que tout le monde connaisse le jeu du pendu, on en rappelle succinctement la règle. Le jeu du pendu consiste
+à deviner un mot caché en énumérant des lettres. A chaque erreur, une potence se construit.
+Lorsque la potence est construite avec un pendu avant que le mot soit découvert, le joueur a perdu.</p>
+<p>On donne l’exemple d’une partie:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="o">%</span><span class="n">Run</span> <span class="n">jeu_pendu</span><span class="o">.</span><span class="n">py</span>
+<span class="go">e _ _ _ _ _ _ t </span>
+
+<span class="go">Proposer une lettre : e</span>
+<span class="go">Erreur ! Il reste 6 lettres à trouver.</span>
+
+<span class="go">    </span>
+<span class="go">    </span>
+<span class="go">    </span>
+<span class="go">    </span>
+<span class="go">___ ___</span>
+
+<span class="go">e _ _ _ _ _ _ t </span>
+
+<span class="go">Proposer une lettre : t</span>
+<span class="go">C&#39;est bien, continue:</span>
+<span class="go">e t _ _ _ _ _ t </span>
+
+<span class="go">Proposer une lettre : i</span>
+<span class="go">Erreur ! Il reste 5 lettres à trouver.</span>
+
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">___|___</span>
+
+<span class="go">e t _ _ _ _ _ t </span>
+
+<span class="go">Proposer une lettre : s</span>
+<span class="go">Erreur ! Il reste 5 lettres à trouver.</span>
+<span class="go">   _________</span>
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">___|___</span>
+
+<span class="go">e t _ _ _ _ _ t </span>
+
+<span class="go">Proposer une lettre : a</span>
+<span class="go">C&#39;est bien, continue:</span>
+<span class="go">e t _ _ _ a _ t </span>
+
+<span class="go">Proposer une lettre : r</span>
+<span class="go">Erreur ! Il reste 4 lettres à trouver.</span>
+<span class="go">   _________</span>
+<span class="go">   |       |</span>
+<span class="go">   |       o</span>
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">___|___</span>
+
+<span class="go">e t _ _ _ a _ t </span>
+
+<span class="go">Proposer une lettre : u</span>
+<span class="go">Erreur ! Il reste 4 lettres à trouver.</span>
+<span class="go">   _________</span>
+<span class="go">   |       |</span>
+<span class="go">   |       O</span>
+<span class="go">   |      /|\</span>
+<span class="go">   |      / \</span>
+<span class="go">___|___</span>
+
+<span class="go">e t _ _ _ a _ t </span>
+
+<span class="go">Vous avez perdu</span>
+<span class="go">le mot à deviner était etonnant</span>
+</pre></div>
+</div>
+</section>
+<section id="fonctions-utiles">
+<h2>Fonctions utiles<a class="headerlink" href="#fonctions-utiles" title="Link to this heading">#</a></h2>
+<p>Nous verrons plus loin le programme principal qui s’occupe du déroulement du jeu selon la règle. Pour le rendre plus
+lisible et facile à écrire, nous nous appuyons sur des fonctions qui réalisent des tâches simples appelées par le
+programme principal.</p>
+<p class="rubric">Cacher un mot</p>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">cacher_mot</span></code> prend en paramètre un mot <code class="docutils literal notranslate"><span class="pre">m</span></code> et renvoie ce mot en remplaçant chacune de ses lettres par des
+caractères soulignés <code class="docutils literal notranslate"><span class="pre">_</span></code> sauf la première et la dernière lettre. La chaine de caratères renvoyée par la fonction a la
+même longueur que le mot passé en argument lors de l’appel.</p>
+<p>On donne des exemples d’appels de cette fonction:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cacher_mot</span><span class="p">(</span><span class="s1">&#39;pendu&#39;</span><span class="p">)</span>
+<span class="go">p___u</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cacher_mot</span><span class="p">(</span><span class="s1">&#39;bonjour&#39;</span><span class="p">)</span>
+<span class="go">b_____r</span>
+</pre></div>
+</div>
+<p class="rubric">Afficher un mot</p>
+<p>On peut remarquer que l’affichage du mot caché ne laisse pas apparaître clairement les différents caractères soulignés
+<code class="docutils literal notranslate"><span class="pre">_</span></code>. Pour cette raison, on va créer une fonction d’affichage en insérant des espaces entre chaque caractère du mot
+passé en argument.</p>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">afficher</span></code> prend en paramètre un mot <code class="docutils literal notranslate"><span class="pre">m</span></code> et affiche celui-ci en insérant des espaces entre chaque
+caractère. La fonction ne renvoie rien.</p>
+<p>On donne des exemples d’appels de cette fonction:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">afficher</span><span class="p">(</span><span class="s1">&#39;pendu&#39;</span><span class="p">)</span>
+<span class="go">p e n d u</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cacher_mot</span><span class="p">(</span><span class="s1">&#39;b_____r&#39;</span><span class="p">)</span>
+<span class="go">b _ _ _ _ _ r</span>
+</pre></div>
+</div>
+<p class="rubric">Lettre découverte</p>
+<p>Lorsqu’on propose une lettre correcte, il faut remplacer le souligné par cette lettre dans le mot caché. La fonction
+<code class="docutils literal notranslate"><span class="pre">remplacer_lettre(mot1,mot2,lettre)</span></code> a trois paramètres:</p>
+<ul class="simple">
+<li><p>mot1 est une chaine de caractères associée au mot à deviner;</p></li>
+<li><p>mot2 est une chaine de caractères associée au mot caché;</p></li>
+<li><p>lettre qui est le caractère qui remplace un caractère souligné.</p></li>
+</ul>
+<p>La fonction renvoie un mot associé au mot caché avec la lettre qui remplace un ou plusieurs caractères soulignés.</p>
+<p>On donne des exemples d’appels de cette fonction:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">remplacer_lettre</span><span class="p">(</span><span class="s1">&#39;pendu&#39;</span><span class="p">,</span><span class="s1">&#39;p___u&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">)</span>
+<span class="go">p_n_u</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cacher_mot</span><span class="p">(</span><span class="s1">&#39;bonjour&#39;</span><span class="p">,</span><span class="s1">&#39;b_____r&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="go">bo__o_r</span>
+</pre></div>
+</div>
+<p class="rubric">Vérifier la présence d’une lettre</p>
+<p>A chaque proposition de lettre du joueur, il faut vérifier si la lettre est bien dans le mot à deviner. La fonction
+<code class="docutils literal notranslate"><span class="pre">lettre_dans_mot</span></code> prend en paramètre le mot à deviner et la lettre à vérifier.</p>
+<p>La fonction renvoie un booléen, c’est à dire la valeur <code class="docutils literal notranslate"><span class="pre">True</span></code> si la lettre passée en argument est dans le mot passé
+en argument ou la valeur <code class="docutils literal notranslate"><span class="pre">False</span></code> dans le cas contraire.</p>
+<p>On donne des exemples d’appels de cette fonction:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lettre_dans_mot</span><span class="p">(</span><span class="s1">&#39;pendu&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lettre_dans_mot</span><span class="p">(</span><span class="s1">&#39;bonjour&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p class="rubric">Nombre de lettres à trouver</p>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">reste_a_trouver</span></code> est une fonction qui renvoie le nombre de lettres à trouver dans le mot. Elle prend en
+paramètre un mot <code class="docutils literal notranslate"><span class="pre">m</span></code> et renvoie un nombre entier correspondant au nombre de soulignés encore présent dans le mot
+passé en argument.</p>
+<p>On donne des exemples d’appels de cette fonction:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">reste_a_trouver</span><span class="p">(</span><span class="s1">&#39;pendu&#39;</span><span class="p">)</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">reste_a_trouver</span><span class="p">(</span><span class="s1">&#39;bo__o_r&#39;</span><span class="p">)</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+<p class="rubric">Dessiner la potence</p>
+<p>Il existe différentes façons de représenter la potence. La potence a finalement 5 états différents. Pour notre jeu,
+nous allons la représenter dans chaque état par une chaine de caractère. L’exemple ci-dessus nous en donne une
+illustration.</p>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">afficher_pendu</span></code> a pour paramètre un nombre entier <code class="docutils literal notranslate"><span class="pre">n</span></code> et renvoie une chaine de caratères qui
+représente l’une des 5 potences possibles. La potence renvoyée dépend de la valeur de l’argument <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
+<p>Les 5 figures peuvent être tracées dans un fichier texte et ensuite transformée en chaine de caractères. Vous pouvez
+apporter votre touche persionnelle à ces représentations.</p>
+<p>On donne des exemples d’appels de cette fonction:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">afficher_pendu</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">   |</span>
+<span class="go">___|___</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">afficher_pendu</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="go">   _________</span>
+<span class="go">   |       |</span>
+<span class="go">   |       O</span>
+<span class="go">   |      /|\</span>
+<span class="go">   |      / \</span>
+<span class="go">___|___</span>
+</pre></div>
+</div>
+</section>
+<section id="programme-principal">
+<h2>Programme principal<a class="headerlink" href="#programme-principal" title="Link to this heading">#</a></h2>
+<p>Le programme principal consiste à dérouler une partie contre la machine jusqu’à l’issue du jeu. Soit le joueur gagne en
+trouvant le mot, soit il est pendu et perd.</p>
+<p>Le programme principal se décompose en trois parties:</p>
+<ol class="arabic simple">
+<li><p>On initialise les variables du programme</p></li>
+<li><p>On crée une boucle de jeu</p></li>
+<li><p>On conclut en affichant le gagnant ou le perdant.</p></li>
+</ol>
+<p class="rubric">Initialiser les variables</p>
+<p>Il faut considérer au moins quatres variables : <code class="docutils literal notranslate"><span class="pre">mot_a_deviner</span></code>, <code class="docutils literal notranslate"><span class="pre">mot_cache</span></code>, <code class="docutils literal notranslate"><span class="pre">n</span></code> et <code class="docutils literal notranslate"><span class="pre">r</span></code>.</p>
+<ul class="simple">
+<li><p>La variable <code class="docutils literal notranslate"><span class="pre">mot_a_deviner</span></code> contient le mot à deviner que le joueur doit ignorer. Pour les test on saisira un mot
+choisi en exemple.</p></li>
+<li><p>la variable <code class="docutils literal notranslate"><span class="pre">mot_cache</span></code> contient le mot à deviner en remplaçant les lettres par des soulignés. Il évolue au fil de
+la partie en remplaçant les soulignés par les lettres trouvées.</p></li>
+<li><p>La variable <code class="docutils literal notranslate"><span class="pre">n</span></code> est le nombre entier qui contient le nombre d’erreurs commises par le joueur.</p></li>
+<li><p>La variable <code class="docutils literal notranslate"><span class="pre">r</span></code> est le nombre entier qui contient le nombre de lettre qu’il faut encore découvrir.</p></li>
+</ul>
+<p>Il faut donc créer ces variables et leur donner une valeur initale.</p>
+<p class="rubric">Boucle de jeu</p>
+<p>Le jeu se déroule tant que le joueur n’a pas touver toutes les lettres et s’il n’a pas commis plus de 5 erreurs.</p>
+<p>A chaque itération, plusieurs instructions sont effectuées:</p>
+<ul class="simple">
+<li><p>Le joueur voit le mot caché affiché avec des caractères soulignés.</p></li>
+<li><p>Une proposition de saisie de lettre est affichée juste après.</p></li>
+<li><p>Le joueur doit saisir une lettre qui est mémorisée dans une variable <code class="docutils literal notranslate"><span class="pre">lettre</span></code>.</p></li>
+<li><p>La lettre est vérifiée. Si elle est correcte, elle remplace le ou les caractères soulignés correspondant dans le mot
+caché. Dans le cas contraire, on affiche la potence qui se complète.</p></li>
+</ul>
+<p class="rubric">Fin de la partie</p>
+<p>La boucle se termine lorsque le joueur a trouvé le mot ou lorsqu’il a perdu et se retrouve pendu.</p>
+<p>Dans les 2 cas, on affiche un message et le mot qui était à trouver.</p>
+</section>
+<section id="amelioration-du-jeu">
+<h2>Amélioration du jeu<a class="headerlink" href="#amelioration-du-jeu" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Intégrer des tests pour gérer certaines situations:</p>
+<ul class="simple">
+<li><p>une mauvaise saisie (chiffre, vide, plusieurs lettres)</p></li>
+<li><p>les accents dans les mots</p></li>
+<li><p>les mots avec un tiret comme week-end</p></li>
+<li><p>le nombre de lettre réellement à trouver et non le nombre de caractères soulignés</p></li>
+</ul>
+</li>
+<li><p>Afficher des informations supplémentaires:</p>
+<ul class="simple">
+<li><p>les lettres déjà proposées par le joueur</p></li>
+<li><p>le nombre d’échecs du joueur</p></li>
+</ul>
+</li>
+<li><p>Ajouter une fonction qui choisit un mot au hasard parmi une liste de mots placés dans un fichier texte. La création
+de cette fonction est difficile et requiert des recherches sur le web, notamment sur l’instruction python <code class="docutils literal notranslate"><span class="pre">open</span></code>
+qui gère la lecture de fichier texte.</p></li>
+<li><p>Toute autre idée qui rend le jeu plus attrayant. Soyez créatifs mais restez dans la possibilité du programmable !</p></li>
+</ol>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../content/exercice.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Exercices</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation">Présentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctions-utiles">Fonctions utiles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#programme-principal">Programme principal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amelioration-du-jeu">Amélioration du jeu</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Yannick Chistel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022, Yannick Chistel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

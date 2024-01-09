@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Activité &#8212; 1 NSI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a6621bbe" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/activite';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Les chaines de caractères" href="cours.html" />
+    <link rel="prev" title="Chaine de caractères" href="../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Haut de page
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <header>
+  
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
+  
+  </header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">1 NSI</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Activité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cours.html">Les chaines de caractères</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercice.html">Exercices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projet/projet.html">Jeu du pendu</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/activite.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Activité</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#premieres-manipulations">Premières manipulations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#un-objet-iterable">Un objet itérable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-concatenation">La concaténation</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="toctree-wrapper compound">
+</div>
+<section id="activite">
+<h1>Activité<a class="headerlink" href="#activite" title="Link to this heading">#</a></h1>
+<p>En Python, une chaine de caractères se note entre des <em>quote</em> simples ou doubles (guillemets).</p>
+<p>On peut manipuler les chaines de caractères en Python.</p>
+<ul class="simple">
+<li><p>La fonction <code class="docutils literal notranslate"><span class="pre">len</span></code> renvoie le nombre de caractères contenus dans la chaine.</p></li>
+<li><p>La fonction <code class="docutils literal notranslate"><span class="pre">type</span></code> renvoie le type de la variable.</p></li>
+<li><p>On peut accéder à un caractère précis dans la chaine de caractères.</p></li>
+</ul>
+<section id="premieres-manipulations">
+<h2>Premières manipulations<a class="headerlink" href="#premieres-manipulations" title="Link to this heading">#</a></h2>
+<p>On considère la variable <code class="docutils literal notranslate"><span class="pre">ch</span></code> de type <strong>str</strong> contenant la chaine <em>numérique science informatique</em>.</p>
+<ol class="arabic simple">
+<li><p>Créer dans un interpréteur Python la variable <code class="docutils literal notranslate"><span class="pre">ch</span></code>.</p></li>
+<li><p>Créer une variable <code class="docutils literal notranslate"><span class="pre">n</span></code> qui a pour valeur le nombre de caractères de la chaine <code class="docutils literal notranslate"><span class="pre">ch</span></code>.</p></li>
+<li><p>Chaque caractère de la chaine occupe une position précise dans la chaine. Cette position est repérée par un nombre
+entier.</p>
+<ol class="loweralpha simple">
+<li><p>Saisir dans l’interpréteur <code class="docutils literal notranslate"><span class="pre">ch[0]</span></code> puis valider. De même avec <code class="docutils literal notranslate"><span class="pre">ch[1]</span></code> puis avec <code class="docutils literal notranslate"><span class="pre">ch[2]</span></code>.</p></li>
+<li><p>Quelle instruction permet d’afficher la première lettre du second mot de la chaine <code class="docutils literal notranslate"><span class="pre">ch</span></code> ?</p></li>
+<li><p>Comment afficher la dernière lettre de la chaine <code class="docutils literal notranslate"><span class="pre">ch</span></code> ?</p></li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="un-objet-iterable">
+<h2>Un objet itérable<a class="headerlink" href="#un-objet-iterable" title="Link to this heading">#</a></h2>
+<p>On peut parcourir les caractères, un à un, d’une chaine de caractères avec une boucle. On dit qu’elle est <strong>itérable</strong>.</p>
+<p>Voici différentes façons de le faire.</p>
+<ol class="arabic">
+<li><p>Recopier et compléter la boucle <code class="docutils literal notranslate"><span class="pre">for</span></code> suivante pour afficher un à un les caractères de la chaine <code class="docutils literal notranslate"><span class="pre">ch</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Il est également possible de parcourir une chaine de caractères sans passer par les indices de position.</p>
+<ol class="loweralpha">
+<li><p>Selon vous, le code suivant réalise-t-il le même affichage que la méthode précédente.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">ch</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lettre</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Que se passe-t-il si on remplace dans le code précédent <code class="docutils literal notranslate"><span class="pre">lettre</span></code> par <code class="docutils literal notranslate"><span class="pre">mot</span></code> ?</p></li>
+</ol>
+</li>
+<li><p>On peut aussi utiliser une boucle conditionnelle pour parcourir partiellement une chaine de caractères.</p>
+<ol class="loweralpha">
+<li><p>Que permet d’obtenir le code suivant ?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lettre</span> <span class="o">=</span> <span class="n">ch</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">lettre</span> <span class="o">!=</span> <span class="s1">&#39;i&#39;</span><span class="p">:</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">lettre</span> <span class="o">=</span> <span class="n">ch</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>Comment améliorer l’écriture du code précédent pour le rendre plus lisible ?</p></li>
+<li><p>Modifier ce code pour connaître la longueur du premier mot de la chaine.</p></li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="la-concatenation">
+<h2>La concaténation<a class="headerlink" href="#la-concatenation" title="Link to this heading">#</a></h2>
+<p>On effectue des opérations sur les nombres. On peut effectuer deux opérations sur les chaines de caractères. L’addition
+et la multiplication sont 2 opérations permises réalisant la <strong>concaténation</strong>.</p>
+<ul class="simple">
+<li><p>L’addition assemble deux chaines de caractères en une seule</p></li>
+<li><p>La multiplication crée une chaine de caractères à partir d’un motif qu’il concatène plusieurs fois.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Créer 3 variables <code class="docutils literal notranslate"><span class="pre">m1</span></code>, <code class="docutils literal notranslate"><span class="pre">m2</span></code> et <code class="docutils literal notranslate"><span class="pre">m3</span></code> contenant respectivement les mots “numérique”, “science” et
+“informatique”.
+Concaténer ces 3 variables dans la variable <code class="docutils literal notranslate"><span class="pre">ch</span></code> pour obtenir une chaine de caractères de valeur “numérique science
+informatique”.</p></li>
+<li><p>Afficher la variable <code class="docutils literal notranslate"><span class="pre">ch</span></code>. Que remarquez-vous ? Proposer une solution pour y remédier.</p></li>
+<li><p>La variable <cite>p</cite> est une chaine de caratères qui contient la valeur “zzzzzzzzzzzzzzz” constituée de 15 “z”. Créer la variable <cite>p</cite>.</p></li>
+</ol>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../index.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Chaine de caractères</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="cours.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Les chaines de caractères</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#premieres-manipulations">Premières manipulations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#un-objet-iterable">Un objet itérable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-concatenation">La concaténation</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Yannick Chistel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022, Yannick Chistel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
