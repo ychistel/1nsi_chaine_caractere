@@ -1,0 +1,68 @@
+>>> %Run jeu_pendu.py
+e _ _ _ _ _ _ t 
+
+Proposer une lettre : e
+Erreur ! Il reste 6 lettres à trouver.
+
+    
+    
+    
+    
+___ ___
+
+e _ _ _ _ _ _ t 
+
+Proposer une lettre : t
+C'est bien, continue:
+e t _ _ _ _ _ t 
+
+Proposer une lettre : i
+Erreur ! Il reste 5 lettres à trouver.
+
+   |
+   |
+   |
+   |
+___|___
+
+e t _ _ _ _ _ t 
+
+Proposer une lettre : s
+Erreur ! Il reste 5 lettres à trouver.
+   _________
+   |
+   |
+   |
+   |
+___|___
+
+e t _ _ _ _ _ t 
+
+Proposer une lettre : a
+C'est bien, continue:
+e t _ _ _ a _ t 
+
+Proposer une lettre : r
+Erreur ! Il reste 4 lettres à trouver.
+   _________
+   |       |
+   |       o
+   |
+   |
+___|___
+
+e t _ _ _ a _ t 
+
+Proposer une lettre : u
+Erreur ! Il reste 4 lettres à trouver.
+   _________
+   |       |
+   |       O
+   |      /|\
+   |      / \
+___|___
+
+e t _ _ _ a _ t 
+
+Vous avez perdu
+le mot à deviner était etonnant

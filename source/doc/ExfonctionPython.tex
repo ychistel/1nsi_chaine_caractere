@@ -1,0 +1,102 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{style2017}
+\newcounter{numexo}
+\setcellgapes{1pt}
+
+\begin{document}
+
+
+\begin{NSI}
+{Exercice}{Fonction en Python}
+\end{NSI}
+
+
+\addtocounter{numexo}{1}
+\subsection*{\Large Exercice \thenumexo }
+On donne le script python suivant.
+\begin{center}
+\includegraphics[scale=0.8]{img/pointe.eps}
+\end{center}
+\begin{enumerate}
+\item Que renvoie l'appel de la fonction \textbf{ligne(10,3)}?
+\item On exécute le script. Quel est l'affichage obtenu ?
+\end{enumerate}
+
+
+\addtocounter{numexo}{1}
+\subsection*{\Large Exercice \thenumexo }
+\begin{enumerate}
+\item Créer une fonction "somme\_carre" qui prend en paramètre deux nombres a et b et renvoie la somme des carrés des deux nombres.
+\item Créer une fonction "double\_produit" qui prend en paramètre deux nombres a et b et renvoie le double du produit de ces deux nombres.
+\item On veut créer une fonction id\_rem qui prend en paramètre deux nombres a et b et renvoie le carré de la somme de ces deux nombres.
+\begin{enumerate}
+\item Écrire cette fonction.
+\item Écrire cette fonction en utilisant les fonctions somme\_carre et double\_produit.
+\end{enumerate}
+\end{enumerate}
+
+\addtocounter{numexo}{1}
+\subsection*{\Large Exercice \thenumexo }
+\begin{enumerate}
+\item Créer une fonction "somme\_arithm" qui prend en paramètre un nombre entier N et retourne la somme de tous les nombres entiers inférieurs ou égaux à N.
+\item Créer une fonction "somme\_carre" qui prend en paramètre un nombre entier N et retourne la somme des carrés des nombres entiers inférieurs ou égaux à N.
+\item Créer une fonction "somme\_inverse" qui prend en paramètre un nombre entier N et retourne la somme des inverses des nombres entiers inférieurs ou égaux à N.
+\item Créer une fonction "somme\_inverse\_carre" qui prend en paramètre un nombre entier N et retourne la somme des carrés des inverses des nombres entiers inférieurs ou égaux à N.
+\end{enumerate}
+
+\newpage
+\addtocounter{numexo}{1}
+\subsection*{\Large Exercice \thenumexo }
+\begin{enumerate}
+\item Écrire une fonction "zen" qui renvoie la ligne de 10 caractères : ZNZNZNZNZN
+\item Modifier cette fonction pour prendre en paramètre le nombre n de caractères.
+\begin{itemize}
+\item si n est pair, la ligne commence par Z et se finit par N;
+\item si n est impair, la ligne comment et finit par la lettre Z.
+\end{itemize}
+\item Modifier cette fonction pour prendre aussi en paramètre chaque caractère, N et Z étant les valeurs par défaut de la fonction.
+\item Écrire un script avec la fonction zen pour reproduire la figure ci-dessous.
+\begin{center}
+\includegraphics[scale=0.8]{img/zen_lignes.eps}
+\end{center}
+\item Écrire une fonction "pluszen" qui utilise la fonction zen pour renvoyer p lignes et n colonnes de 2 caractères décalés à chaque ligne. Par exemple, le code ci-dessous:
+\begin{center}
+\includegraphics[scale=0.8]{img/pluszen.eps}
+\end{center}
+renvoie l'affichage:
+\begin{center}
+\includegraphics[scale=0.8]{img/pluszen-fig.eps}
+\end{center}
+\end{enumerate}
+
+\addtocounter{numexo}{1}
+\subsection*{\Large Exercice \thenumexo }
+\begin{enumerate}
+\item Créer une fonction "est\_impair" qui prend en paramètre un nombre entier et renvoie vrai si le nombre est impair et faux s'il ne l'est pas.
+\item Créer une fonction "est\_multiple" qui prend en paramètre 2 nombres entiers et qui renvoie vrai si le premier nombre est un multiple du second et faux sinon.
+\item Un nombre entier est dit \textbf{premier} s'il est divisible seulement par 1 et lui-même. Écrire une fonction "est\_premier" qui prend en paramètre un nombre entier et renvoie vrai s'il est premier et faux sinon.
+\end{enumerate}
+
+%\addtocounter{numexo}{1}
+%\subsection*{\Large Exercice \thenumexo }
+%On dit que deux nombres entiers A et B sont amicaux si la somme des diviseurs de A est égale à B et en même temps la somme des diviseurs de B est égale à A. Attention, on ne prend pas en compte A et B comme diviseur.
+%\begin{enumerate}
+%\item Créer une fonction "somme\_diviseur" qui prend en paramètre un nombre entier N et retourne la somme des diviseurs de N (on ne doit pas prendre  en compte N comme diviseur).
+%\item Créer une fonction "nombres\_amicaux" qui prend en paramètre 2 nombres entiers A et B et retourne True s'ils sont amicaux et False sinon.
+%\item Vérifier que les nombres 220 et 284 sont amicaux. De même avec 12 285 et 14 595.
+%\end{enumerate}
+
+
+\addtocounter{numexo}{1}
+\subsection*{\Large Exercice \thenumexo }
+Un palindrome est un mot qui peut se lire dans les deux sens, comme par exemple LAVAL et NON.
+\begin{enumerate}
+\item Créer une fonction renverse qui prend en paramètre une chaine de caractères et renvoie cette même chaine écrite dans l'autre sens.
+\item Écrire une fonction palindrome qui prend en paramètre une chaine de caractères et renvoie vrai si cette chaine est un palindrome.
+\item Faire de même avec les nombres entiers en écriture décimale.
+\end{enumerate}
+
+
+\end{document}
+
